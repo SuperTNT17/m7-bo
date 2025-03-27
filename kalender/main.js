@@ -7,7 +7,6 @@ let maandTitle = document.getElementById("maandTitle");
 
 const previousMonthBtn = document.getElementById("previousMonthBtn");
 previousMonthBtn.addEventListener("click", function () {
-    // Volgende maand
     month--;
     if (month < 0) {
         month = 11; // Naar december
@@ -18,7 +17,6 @@ previousMonthBtn.addEventListener("click", function () {
 
 const nextMonthBtn = document.getElementById("nextMonthBtn");
 nextMonthBtn.addEventListener("click", function () {
-    // Volgende maand
     month++;
     if (month > 11) {
         month = 0; // Naar januari
@@ -30,23 +28,19 @@ nextMonthBtn.addEventListener("click", function () {
 function updateCalendar(year, month) {
     updateMonth();
     jaarTitle.innerHTML = year;
-    // Haal de eerste dag van de maand op en de laatste datum van de maand
     let dayone = new Date(year, month, 1).getDay(); // Eerste dag van de maand
     let lastdate = new Date(year, month + 1, 0).getDate();  // Aantal dagen in de maand
-    let dayend = new Date(year, month, lastdate).getDay();
+    let dayend = new Date(year, month, lastdate).getDay();  // Laatste dag van de maand
 
-    // Pas de waarde van dayone aan voor een kalender die begint op maandag
-    // Zondag (0) moet worden behandeld als 6 (de laatste dag van de week)
     if (dayone === 0) {
         dayone = 6; // Zondag wordt de 6de index in plaats van 0
     } else {
-        dayone -= 1; // Verplaats andere dagen zodat maandag 0 is, dinsdag 1 is, etc.
+        dayone -= 1; // Verplaats andere dagen zodat maandag 0 is
     }
 
-    // Verkrijg alle "nummers" van de kalender
     const nummers = document.getElementsByClassName("nummers");
 
-    // Maak de kalender leeg (vooral oude gegevens)
+    // Maak kalender leeg
     for (let row = 0; row < nummers.length; row++) {
         for (let day = 0; day < 7; day++) {
             nummers[row].children[day].innerHTML = '';
@@ -56,7 +50,7 @@ function updateCalendar(year, month) {
     let row = 0;
     let day = dayone;
 
-    // Vul de kalender met de juiste dagen
+    // Dagen in de kalender doen
     for (let i = 0; i < lastdate; i++) {
         if (day % 7 == 0 && day != 0) {
             row++;
@@ -118,5 +112,4 @@ function updateMonth() {
     }
 }
 
-// Initialiseer de kalender bij het laden
 updateCalendar(year, month);
