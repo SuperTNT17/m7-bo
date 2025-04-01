@@ -44,6 +44,7 @@ function updateCalendar(year, month) {
     for (let row = 0; row < nummers.length; row++) {
         for (let day = 0; day < 7; day++) {
             nummers[row].children[day].innerHTML = '';
+            nummers[row].children[day].classList.remove("js--currentDay");
         }
     }
 
@@ -60,8 +61,11 @@ function updateCalendar(year, month) {
         // Zorg ervoor dat we geen 'undefined' krijgen door te controleren of we de juiste cellen gebruiken
         if (nummers[row] && nummers[row].children[day]) {
             nummers[row].children[day].innerHTML = i + 1;
+            // Dag van vandaag highlighten
+            if (i + 1 == time.getDate() && month == time.getMonth()) {
+                nummers[row].children[day].classList.add("js--currentDay");
+            }
         }
-
         day++;
     }
 }

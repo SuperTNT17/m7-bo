@@ -1,0 +1,1 @@
+Ik ga de berichten gebruiken van twitter in de stijl van reddit
