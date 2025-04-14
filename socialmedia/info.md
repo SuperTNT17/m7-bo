@@ -1,1 +1,1 @@
-Ik ga de berichten gebruiken van twitter in de stijl van reddit
+Mijn idee was om de style van Reddit na te maken, maar dan met de posts in de style van Twitter.

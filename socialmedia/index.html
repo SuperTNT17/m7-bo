@@ -11,33 +11,60 @@
 </head>
 
 <body>
-    <aside id="left">
-        <p>TOPICS</p>
-        <ul id="topics">
-            <li>Internet Culture (Viral)</li>
-            <li>Games</li>
-            <li>Q&As</li>
-            <li>Technology</li>
-            <li>Pop Culture</li>
-            <li>Movies & TV</li>
-        </ul>
-    </aside>
-    <main>
-        <ul id="posts">
-            <!-- Hier worden posts gezet door de js -->
-        </ul>
-        <div id="infiniteScroll" class="infinite-Scroll"></div>
-    </main>
-    <aside id="right">
-        <p>POPULAR COMMUNITIES</p>
-        <ul id="communities">
-            <li>r/reddit</li>
-            <li>r/funny</li>
-            <li>r/gaming</li>
-            <li>r/twitter</li>
-            <li>r/socialMedia</li>
-        </ul>
-    </aside>
+    <nav>
+        <p><i class="fa-brands fa-reddit" style="color: #ff4500"></i> Reddit</p>
+        <input type="text" name="search" id="search" placeholder="🔍 Search Reddit">
+        <div id="navTopRightButtons">
+            <button id="buttonApp"><i class="fa-solid fa-qrcode"></i> Get App</button>
+            <button id="buttonLogIn">Log In</button>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+    </nav>
+    <div id="flex-wrapper">
+        <aside id="left">
+            <p>TOPICS</p>
+            <ul class="leftList">
+                <li><i class="fa-regular fa-face-laugh-beam"></i> Internet Culture (Viral)</li>
+                <li><i class="fa-solid fa-gamepad"></i> Games</li>
+                <li><i class="fa-solid fa-question"></i> Q&As</li>
+                <li><i class="fa-solid fa-microchip"></i> Technology</li>
+                <li><i class="fa-regular fa-star"></i> Pop Culture</li>
+                <li><i class="fa-solid fa-clapperboard"></i> Movies & TV</li>
+            </ul>
+            <p>RESOURCES</p>
+            <ul class="leftList">
+                <li><i class="fa-brands fa-reddit-alien"></i> About Reddit</li>
+                <li><i class="fa-solid fa-bullhorn"></i> Advertise</li>
+                <li><i class="fa-solid fa-signal"></i> Reddit Pro</li>
+                <li><i class="fa-regular fa-circle-question"></i> Help</li>
+                <li><i class="fa-solid fa-book-open"></i> Blog</li>
+                <li><i class="fa-solid fa-wrench"></i> Careers</li>
+                <li><i class="fa-solid fa-microphone-lines"></i> Press</li>
+            </ul>
+            <ul class="leftList">
+                <li><i class="fa-regular fa-registered"></i> Communities</li>
+                <li><i class="fa-solid fa-hourglass-end"></i> Best of Reddit</li>
+                <li><i class="fa-solid fa-qrcode"></i> Topics</li>
+            </ul>
+        </aside>
+        <main>
+            <ul id="posts">
+                <!-- Hier worden posts gezet door de js -->
+            </ul>
+            <div id="infiniteScroll" class="infinite-Scroll"></div>
+        </main>
+        <aside id="right">
+            <p>POPULAR COMMUNITIES</p>
+            <ul id="communities">
+                <li>r/reddit</li>
+                <li>r/funny</li>
+                <li>r/gaming</li>
+                <li>r/twitter</li>
+                <li>r/socialMedia</li>
+            </ul>
+            <p id="seeMore">See more</p>
+        </aside>
+    </div>
 </body>
 
 </html>

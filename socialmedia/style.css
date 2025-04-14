@@ -14,22 +14,76 @@ body {
     font-size: 2rem;
     font-family: sans-serif;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(37, 37, 37);
+    flex-direction: column;
+    background-color: rgb(14, 17, 19);
+    /* padding: 1rem; */
+    color: rgb(238, 241, 243);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgb(62, 65, 66) 0.1rem solid;
     padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 6vh;
+    position: sticky;
+    top: 0rem;
+    background-color: rgb(14, 17, 19);
+}
+
+#search {
+    width: 30%;
+    height: 100%;
+    border-radius: 5rem;
+    border: 0;
+    padding: 0.5rem;
+    padding-left: 2rem;
     color: white;
+    background-color: rgb(51, 61, 66);
+}
+
+#navTopRightButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#navTopRightButtons>button {
+    border: 0;
+    color: rgb(238, 241, 243);
+    border-radius: 5rem;
+    font-weight: bold;
+    min-width: fit-content;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#navTopRightButtons>i {
+    cursor: pointer;
+}
+
+#buttonApp {
+    background-color: rgb(42, 50, 54);
+    cursor: pointer;
+}
+
+#buttonLogIn {
+    background-color: rgb(217, 57, 0);
+    cursor: pointer;
+}
+
+#flex-wrapper {
+    display: flex;
 }
 
 aside {
     position: sticky;
     padding: 2rem;
     max-height: 100vh;
-    top: 1rem;
-}
-
-aside>p {
-    color: gray;
-    margin-bottom: 1rem;
+    top: 6vh;
 }
 
 aside>ul {
@@ -38,23 +92,36 @@ aside>ul {
 }
 
 #left {
-    width: 30%;
-    border-right: gray 0.1rem solid;
+    width: 25%;
+    border-right: rgb(62, 65, 66) 0.1rem solid;
 }
 
-#topics {
+#left>p{
+    color: rgb(105, 122, 131);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 70%;
+}
+
+.leftList {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border-bottom: rgb(62, 65, 66) 0.1rem solid;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-#topics>li:hover {
+.leftList>li{
+    font-size: 75%;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
 main {
     width: 100%;
     padding: 1rem;
+    padding-left: 25rem;
 }
 
 li {
@@ -64,15 +131,16 @@ li {
 #posts {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    border: 0.1rem gray solid;
-    gap: 0.5rem;
+    border-top: 0.1rem gray solid;
+    border-bottom: 0.1rem gray solid;
+    gap: 1rem;
     padding: 0.5rem;
+    width: 80%;
 }
 
 .userDate {
@@ -91,12 +159,19 @@ li {
 
 .date {
     color: darkgray;
+    font-size: 80%;
+    align-self: center;
+}
+
+.content {
+    color: rgb(183, 202, 212);
 }
 
 .infoBar {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    justify-content: space-between;
 }
 
 .infoBar>p:hover {
@@ -105,13 +180,27 @@ li {
 
 #right {
     width: 30%;
-    border-left: gray 0.1rem solid;
+    height: 100%;
+    border-radius: 1rem;
+    margin-right: 30rem;
+    margin-top: 1rem;
+    background-color: black;
+}
+
+#right>p{
+    color: rgb(139, 162, 173);
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+}
+
+#seeMore{
+    cursor: pointer;
 }
 
 #communities {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
 }
 
 #communities>li:hover {

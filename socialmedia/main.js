@@ -82,9 +82,12 @@ function makeposts(data) {
         let reposts = document.createElement("p");
         reposts.innerHTML = `<i class="fa-solid fa-repeat"></i> ${data[i].reposts}`;
 
+        let share = document.createElement("p");
+        share.innerHTML = `<i class="fa-solid fa-arrow-up-from-bracket"></i>`;
+
         infoBar.appendChild(comments);
-        infoBar.appendChild(likes);
         infoBar.appendChild(reposts);
+        infoBar.appendChild(likes);
 
         post.appendChild(userDate);
         post.appendChild(content);

@@ -64,7 +64,7 @@
         "reposts": 2
     },
     {
-        "user": "null",
+        "user": "Deleted User",
         "content": "DROP TABLE posts;",
         "date": "14/04/2025",
         "comments": 0,
@@ -73,7 +73,7 @@
     },
     {
         "user": "Admin",
-        "content": "<b>@null</b> Hahaha ja dat werkt niet",
+        "content": "<b>@Deleted User</b> Hahaha ja dat werkt niet",
         "date": "14/04/2025",
         "comments": 1,
         "likes": 22,
