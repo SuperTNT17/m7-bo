@@ -1,58 +1,90 @@
 [
     {
-        "user":"Jan Patat",
-        "content":"Patat is lekker",
-        "date":"01/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "Jan Patat",
+        "content": "Patat is lekker.",
+        "date": "01/04/2025",
+        "comments": 3,
+        "likes": 142,
+        "reposts": 50
     },
     {
-        "user":"John Pork",
-        "content":"is calling..",
-        "date":"01/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "John Pork",
+        "content": "is calling..",
+        "date": "01/04/2025",
+        "comments": 10,
+        "likes": 1493,
+        "reposts": 216
     },
     {
-        "user":"Piet Wortelboer",
-        "content":"Ik houd van wortels.",
-        "date":"01/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "Piet Wortelboer",
+        "content": "Ik houd van wortels.",
+        "date": "01/04/2025",
+        "comments": 0,
+        "likes": 1,
+        "reposts": 0
     },
     {
-        "user":"user39444201",
-        "content":"test 123",
-        "date":"14/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "user39444201",
+        "content": "test 123",
+        "date": "14/04/2025",
+        "comments": 0,
+        "likes": 0,
+        "reposts": 1
     },
     {
-        "user":"Speedy-Bat-301",
-        "content":"Dit is een hele leuke social media website waar ik posts kan maken",
-        "date":"14/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "Speedy-Bat-301",
+        "content": "Dit is een hele leuke social media website waar ik posts kan maken.",
+        "date": "14/04/2025",
+        "comments": 0,
+        "likes": 0,
+        "reposts": 0
     },
     {
-        "user":"user4858259",
-        "content":"lorem ipsum dolor sit amet idk wat komt er na",
-        "date":"14/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "Antique-Squirrel-554",
+        "content": "Dit is een hele leuke social media website waar ik posts kan maken.",
+        "date": "14/04/2025",
+        "comments": 0,
+        "likes": 0,
+        "reposts": 0
     },
     {
-        "user":"user552252256",
-        "content":"",
-        "date":"14/04/2025",
-        "comments":0,
-        "likes":0,
-        "reposts":0
+        "user": "Sneaky-Cucumber-033",
+        "content": "Dit is een hele leuke social media website waar ik posts kan maken.",
+        "date": "14/04/2025",
+        "comments": 3,
+        "likes": 0,
+        "reposts": 0
+    },
+    {
+        "user": "user4858259",
+        "content": "lorem ipsum dolor sit amet ja idk wat er na komt.",
+        "date": "14/04/2025",
+        "comments": 1,
+        "likes": 5,
+        "reposts": 2
+    },
+    {
+        "user": "null",
+        "content": "DROP TABLE posts;",
+        "date": "14/04/2025",
+        "comments": 0,
+        "likes": 0,
+        "reposts": 0
+    },
+    {
+        "user": "Admin",
+        "content": "<b>@null</b> Hahaha ja dat werkt niet",
+        "date": "14/04/2025",
+        "comments": 1,
+        "likes": 22,
+        "reposts": 10
+    },
+    {
+        "user": "user727",
+        "content": "When you see this post!",
+        "date": "14/04/2025",
+        "comments": 7,
+        "likes": 2,
+        "reposts": 7
     }
 ]
