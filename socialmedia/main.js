@@ -43,13 +43,13 @@ function makeposts(data) {
         infoBar.classList.add("infoBar");
         
         let comments = document.createElement("p");
-        comments.innerHTML = `C:${data[i].comments}`;
+        comments.innerHTML = `<i class="fa-solid fa-comment"></i> ${data[i].comments}`;
         
         let likes = document.createElement("p");
-        likes.innerHTML = `L:${data[i].likes}`;
+        likes.innerHTML = `<i class="fa-solid fa-thumbs-up"></i> ${data[i].likes}`;
         
         let reposts = document.createElement("p");
-        reposts.innerHTML = `R:${data[i].reposts}`;
+        reposts.innerHTML = `<i class="fa-solid fa-repeat"></i> ${data[i].reposts}`;
         
         infoBar.appendChild(comments);
         infoBar.appendChild(likes);

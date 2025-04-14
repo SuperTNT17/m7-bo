@@ -27,6 +27,7 @@ aside{
 
 aside>p{
     color: gray;
+    margin-bottom: 1rem;
 }
 
 aside>ul{
@@ -36,12 +37,17 @@ aside>ul{
 
 #left{
     width: 20%;
+    border-right: gray 0.1rem solid;
 }
 
 #topics{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+#topics>li:hover{
+    cursor: pointer;
 }
 
 main{
@@ -76,6 +82,10 @@ li{
     font-weight: bold;
 }
 
+.user:hover{
+    cursor: pointer;
+}
+
 .date{
     color: darkgray;
 }
@@ -83,7 +93,11 @@ li{
 .infoBar{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
+}
+
+.infoBar>p:hover{
+    cursor: pointer;
 }
 
 #right{
@@ -94,4 +108,8 @@ li{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+#communities>li:hover{
+    cursor: pointer;
 }
