@@ -13,8 +13,85 @@ html {
 body {
     font-size: 2rem;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 37, 37);
+    padding: 1rem;
+    color: white;
+}
+
+aside{
+    position: sticky;
+    padding: 2rem;
+}
+
+aside>p{
+    color: gray;
+}
+
+aside>ul{
+    color: white;
+    margin-left: 1rem;
+}
+
+#left{
+    width: 20%;
+}
+
+#topics{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main{
+    width: 100%;
 }
 
 li{
     list-style-type: none;
+}
+
+#posts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem gray solid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.userDate{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.user{
+    font-weight: bold;
+}
+
+.date{
+    color: darkgray;
+}
+
+.infoBar{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#right{
+    width: 30%;
+}
+
+#communities{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

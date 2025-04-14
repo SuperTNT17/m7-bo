@@ -1,17 +1,58 @@
 [
     {
         "user":"Jan Patat",
-        "content":"Test 123",
-        "date":"01/04/2025"
+        "content":"Patat is lekker",
+        "date":"01/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
     },
     {
         "user":"John Pork",
         "content":"is calling..",
-        "date":"01/04/2025"
+        "date":"01/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
     },
     {
         "user":"Piet Wortelboer",
         "content":"Ik houd van wortels.",
-        "date":"01/04/2025"
+        "date":"01/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
+    },
+    {
+        "user":"user39444201",
+        "content":"test 123",
+        "date":"14/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
+    },
+    {
+        "user":"Speedy-Bat-301",
+        "content":"Dit is een hele leuke social media website waar ik posts kan maken",
+        "date":"14/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
+    },
+    {
+        "user":"user4858259",
+        "content":"lorem ipsum dolor sit amet idk wat komt er na",
+        "date":"14/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
+    },
+    {
+        "user":"user552252256",
+        "content":"",
+        "date":"14/04/2025",
+        "comments":0,
+        "likes":0,
+        "reposts":0
     }
 ]
