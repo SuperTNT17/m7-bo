@@ -1,0 +1,25 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-image: linear-gradient(gray, rgb(255, 70, 70));
+    height: 100vh;
+    display: flex;
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    border: 0.1rem black solid;
+}
