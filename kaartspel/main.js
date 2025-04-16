@@ -70,14 +70,13 @@ class Deck {
     }
 
     Shuffle() {
-        let shuffled = [];
-        let lenght = this.cards.length;
-        let random;
-        for (let i = 0; i < length; i++) {
-            random = Math.floor(Math.random() * length--);
-            shuffled.push(this.cards.splice(random, 1)[0]);
-        }
-        this.cards = shuffled;
+        // Fisher-Yates algoritme
+        // loop door alle kaarten in het deck
+        // swap ieder element met een ander random element
+        for (let i = this.cards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
+        }   
     }
 
     Draw() {
@@ -95,8 +94,6 @@ function roundStart() {
 let deck = new Deck();
 console.log("deck:");
 console.log(deck.cards);
-// deck.Shuffle();
-// console.log(deck.cards);
 deck.Shuffle();
 console.log("cards na shufflen:");
 console.log(deck.cards);
