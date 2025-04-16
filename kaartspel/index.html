@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,92 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon-balatro.png">
 </head>
+
 <body>
-    
+    <aside>
+        <div id="blindInfo">
+            <h2 id="blindInfo-name">name</h2>
+            <div id="blindInfo-requiredScoreWrapper">
+                <p>Score at least</p>
+                <p id="blindInfo-requiredScore">requiredScore</p>
+                <p id="blindInfo-reward">reward</p>
+            </div>
+        </div>
+        <div id="roundScore">
+            <p>Round score</p>
+            <p id="roundScore-score">score</p>
+        </div>
+        <div id="selectedCardsInfo">
+            <p id="selectedCardsInfo-handName">handName</p>
+            <p id="selectedCardsInfo-chips">chips</p>
+            <p id="selectedCardsInfo-x">X</p>
+            <p id="selectedCardsInfo-mult">mult</p>
+        </div>
+        <div id="roundInfo">
+            <div id="roundInfo-buttonsWrapper">
+                <button id="roundInfo-runInfoButton">Run info</button>
+                <button id="roundInfo-optionsButton">Options</button>
+            </div>
+            <div id="roundInfo-infoWrapper">
+                <div id="roundInfo-handsDiscardsWrapper">
+                    <div id="roundInfo-handsWrapper">
+                        <p>Hands</p>
+                        <p id="roundInfo-hands">0</p>
+                    </div>
+                    <div id="roundInfo-discardsWrapper">
+                        <p>Discards</p>
+                        <p id="roundInfo-discards">0</p>
+                    </div>
+                </div>
+                <div id="roundInfo-moneyWrapper">
+                    <p id="roundInfo-money">0</p>
+                </div>
+                <div id="roundInfo-anteRoundWrapper">
+                    <div id="roundInfo-anteWrapper">
+                        <p>Ante</p>
+                        <p id="roundInfo-ante">0</p>
+                    </div>
+                    <div id="roundInfo-roundWrapper">
+                        <p>Round</p>
+                        <p id="roundInfo-round">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div id="jokersConsumables">
+            <div id="jokersWrapper">
+                <div id="jokers"></div>
+                <p id="jokers-amount">0/0</p>
+            </div>
+            <div id="consumablesWrapper"></div>
+            <p id="consumables-amount">0/0</p>
+        </div>
+        <div id="hand">
+            <div id="cardsButtonsWrapper">
+                <div id="cardsWrapper">
+                    <div id="cards"></div>
+                    <p id="cardsInHand">0/0</p>
+                </div>
+                <div id="buttonsWrapper">
+                    <button id="playHandButton">Play Hand</button>
+                    <div id="handSortWrapper">
+                        <p>Sort Hand</p>
+                        <div id="rankSuitButtonsWrapper">
+                            <button id="rankSortButton">Rank</button>
+                            <button id="suitSortButton">Suit</button>
+                        </div>
+                    </div>
+                    <button id="discardHandButton">Discard</button>
+                </div>
+            </div>
+            <div id="deck">
+                <div id="deck-cardBack"></div>
+                <p id="deck-remaining">0/0</p>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
