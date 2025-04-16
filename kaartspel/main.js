@@ -1,4 +1,4 @@
-const body = document.getElementsByTagName("body")[0];
+
 const deckStartingSize = 52; // variabele voor als je aan wilt passen hoe groot het deck is
 let handSize = 8;
 const maxSelectedCards = 5;
@@ -58,6 +58,8 @@ const BlindTypeReward = {
     "boss": 5
 }
 
+const htmlCards = document.getElementById("cards");
+
 class Card {
     constructor(rank, suit) {
         this.rank = rank;
@@ -82,7 +84,7 @@ class Card {
 
         card.appendChild(rank);
         card.appendChild(suit);
-        body.appendChild(card);
+        cards.appendChild(card);
     }
 }
 
