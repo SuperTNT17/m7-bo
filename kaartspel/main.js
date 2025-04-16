@@ -1,4 +1,3 @@
-
 const deckStartingSize = 52; // variabele voor als je aan wilt passen hoe groot het deck is
 let handSize = 8;
 const maxSelectedCards = 5;
